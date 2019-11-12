@@ -1,0 +1,4 @@
+GET http://5dbacba23ec5fb001431940d.mockapi.io/api/NguoiDung
+Content-Type: application/json
+
+
