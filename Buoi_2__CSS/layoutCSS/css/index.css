@@ -1,0 +1,229 @@
+/* Global */
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+/* clearfix class */
+.clearfix::after {
+  content: "";
+  display: block; 
+  clear: both;
+}
+
+/* Header */
+.header img {
+  width: 150px;
+}
+
+/* Navbar */
+.navbar ul {
+  list-style: none;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 10px;
+  /*    1 all in one 
+        2 top-bottom right-left 
+        3 top ringht-left bottom
+        4 top right bottom left
+    */
+}
+
+/* carousel */
+.carousel {
+  background-image: url(../img/slider_1.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 8px;
+}
+
+/* intro */
+.intro {
+  margin-bottom: 10px;
+}
+
+#intro__p {
+  color: red;
+}
+
+.intro p {
+  font-weight: bold;
+  text-indent: 30px;
+  margin: 20px;
+}
+
+/*
+
+.intro__container__item {
+  float: left;
+  padding: 10px;
+}
+
+.intro__container__left,
+.intro__container__right {
+  float: left;
+  width: 50%;
+}
+
+.intro__container__item__1 {
+  width: 50%;
+}
+
+.intro__container__item__2 {
+  width: 100%;
+}
+
+.intro__container__item__3 {
+  width: 100%;
+}
+
+.intro__container__item__2 img {
+  height: 501px;
+}
+
+.intro__container__item img {
+  width: 100%;
+}
+*/
+
+.intro__left,.intro__right, .intro__img1,.intro__img2{
+  width: 50%;
+  float: left;
+}
+
+.intro__items img{
+  width: 100%;
+  display: block;
+
+}
+
+.intro__items{
+  padding: 0px 10px 20px;
+}
+
+
+/* products */
+.products__items {
+  float: left;
+  width: 25%;
+  /* margin: 0 15px; */
+  padding: 0 15px;
+}
+
+.products__items img {
+  width: 100%;
+}
+.products h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.products__items h3 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.products__items button {
+  width: 70px;
+  height: 22px;
+  color: white;
+  background-color: brown;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all.3s;
+}
+
+.products__items button:hover {
+  transform: translateY(3px);
+  box-shadow: 0 5px #666;
+}
+
+.products__items button:active {
+  background-color: seagreen;
+  color: white;
+  opacity: 0.9;
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+/* banner */
+.banner {
+  margin-top: 10px;
+  background-image: url('../img/nature.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  position: relative;
+}
+
+.banner__circle{
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 0, 0, 0.3);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  /* top vs left phai co posiotion */
+  top: 20px;  
+  left: 350px;
+  /* opacity: 0.5; */
+}
+
+.banner__text{
+  padding: 60px 0;
+}
+/* services */
+
+.services {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.services__items {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 26px;
+}
+
+.services__items h3 {
+  margin: 8px 0;
+}
+
+.services__items img {
+  width: 40px;
+  height: 40px;
+}
+
+.services__items .fa{
+  font-size: 40px
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px 0;
+}

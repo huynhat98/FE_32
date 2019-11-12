@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer, aside, nav, main, article, figure{
+    display: block;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* header */
+.nav1{
+    display: flex;
+    background-color:rgb(21,101,192);
+    color: white;
+    padding: 13px 0;
+    position: relative;
+}
+
+.nav__list1{
+    position: absolute;
+    right: 65px;
+}
+
+.nav1__p{
+    margin-left: 65px;
+}
+
+.nav1 ul li{
+    display: inline;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.nav1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav2{
+    background-image: url(../img/b1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+.nav2__contents{
+    background-color: rgb(13,89,175);
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.nav2 h1{
+    color: white;
+    font-size: 2.2rem;
+    margin: 0 65px;
+}
+
+.nav2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav__list2 ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav__list3 ul li{
+    list-style: none;
+}
+
+.nav__list3{
+    text-align: right;
+    position: absolute;
+    right: 65px;
+}
+
+.header a:hover{
+    color: rgb(241,162,40);
+}
+
+/* carousel */
+.carousel__contens{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: 45px auto;
+    grid-gap: 15px;
+
+
+}
+
+.carousel__items1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.carousel__items2{
+    grid-column: 3 / span 2;
+}
+
+.carousel__contens img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+/* products */
+.products{
+    background-color: rgb(249,248,248);
+    padding-bottom: 50px;
+}
+
+.products h1{
+    color: rgb(21,101,192);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 40px;
+}
+
+.products__contents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-column-gap: 20px;
+}
+
+.products__contents img{
+    width: 100%;
+    display: block;
+}
+
+.products__contents h3{
+    color: rgb(21,101,192);
+    text-align: center;
+    margin: 18px 0;
+}
+
+.products__contents h4{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.products__items p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.products__items button{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px 12px;
+    color: rgb(21,101,192);
+    border: solid 1.5px rgb(241,162,40);
+    cursor: pointer;
+    outline: none;
+    transition: all .5s;
+}
+
+.products__items button:hover{
+    color: rgb(241,162,40);
+    border: solid 1px black;
+}
+
+.products__items{
+    border: solid 2px rgb(217,217,217);
+}
+
+.products__cost{
+    color: rgb(128,128,128);
+    text-decoration: line-through;
+}
+
+.products__p{
+    margin-left:30px ;
+}
+
+/* shop */
+.shop{
+    background-image: url(../img/ban1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 440px;
+}
+
+.shop__contents{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.shop__discount{
+    font-size: 2.1rem;
+}
+
+.shop__trending{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    position: relative;
+    /* text-decoration: line-through; */
+}
+
+.shop__line{
+    width: 100%;
+    background-color: rgba(217,217,217,0.7);
+    height: 1px;
+    display: block;
+    position: absolute;
+    top:24px;
+}
+
+.shop__button button{
+    color: white;
+    background-color: rgb(241,162,40);
+    outline: none;
+    border: none;
+    padding: 8px 15px; 
+    margin: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.shop__button button:hover{
+    background-color: white;
+    color: rgb(241,162,40);
+}
+
+.shop__discount{
+    margin: 40px;
+}
+
+/* arrivals */
+
+.arrivals h1{
+    color: rgb(21,101,192);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 40px;
+}
+
+.arrivals{
+    padding-bottom: 50px;
+}
+
+/* trends */
+.trends h1{
+    color: rgb(21,101,192);
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 38px;
+}
+
+.trends{
+    background-color: rgb(249,248,248);
+    padding-bottom: 50px;
+}
+
+.trends__head{
+    position: relative;
+}
+
+.trends__head p{
+    width: 100%;
+    background-color: white;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 73px;
+
+}
+
+.trends__contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.trends__items img{
+    width: 100%;
+    display: block;
+}
+
+.trends__items{
+    position: relative;
+}
+
+.trends__percent{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(21,101,192);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.trends__detail{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgba(21,101,192,.7);
+    padding: 10px;
+    color: white;
+}
+
+/* footer */
+
+.footer__container1{
+    width: 100%;
+    background-color: rgb(21,101,192);
+}
+
+.footer__contents1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    width: 80%;
+    color: white;
+    padding: 65px 0;
+}
+
+.footer__contents1 ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.footer__contents1 ul li a:hover{
+    color: rgb(241,162,40);
+}
+
+
+.footer__contents1 ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer__items p{
+    margin-top: 15px;
+}
+
+.footer__items .fa{
+    padding-right: 12px;
+}
+
+.footer__items4 h1{
+    margin-left: -20px;
+}
+
+.footer__container2{
+    background-color: black;
+    width: 100%;
+}
+
+.footer__contents2{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    align-items:center; 
+}
+
+.footer__source{
+    color: white;
+    padding: 30px 0;
+}
+
+.footer__pay{
+    position: absolute;
+    right: 0;
+}

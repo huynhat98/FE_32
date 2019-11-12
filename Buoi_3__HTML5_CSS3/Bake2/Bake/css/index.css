@@ -1,0 +1,82 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+  }
+
+ body{
+    font-family: 'Montserrat', sans-serif;
+ /* neu khong nghi fs thi 1 rem = 16px */
+    /* 1rem = 20px */
+    font-size:20px;
+
+   
+ } 
+
+ /* HEADER */
+.header{
+    background-color: #4e2a84;
+    color: white;
+}
+
+.header p{
+    font-size: 2rem;
+}
+ .header nav ul{
+    list-style: none;
+ }
+ .header nav ul li{
+     display: inline;
+     margin: 0 10px;
+ }
+ .header nav ul a{
+     text-decoration: none;
+     color: white;
+     font-size: 1rem;
+ }
+
+ .header__content{
+     width:70%;
+     margin: 0 auto;
+     display: flex; 
+     /* canh theo chieu ngang */
+     justify-content: space-around;
+     /* canh theo doc */
+     align-items: center;
+ }
+
+ /* Carousel */
+ .carousel{
+     background-image: url('../img/b3.jpg');
+     height: 600px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     color: white;
+     /* canh giu the con, chi ap dung cho 1 con */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+.carousel__content button{
+    background-color: #ff0e83;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+} 
+
+.carousel__content button:hover{
+    background-color: white;
+    border: 1px solid #ff0e83;
+    color: black;
+    
+}

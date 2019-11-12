@@ -1,0 +1,672 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+header, section, footer, aside, nav, main, article, figure {
+  display: block;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* header */
+
+.header{
+    background-color: #4e2a84;
+    color: white;
+}
+
+.header p{
+
+    /* neu khong dinh nghia font-size thi 1 rem la 16 px */
+    /* 1rem = 20px */
+    font-size: 2rem;
+    
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li{
+    margin: 0 10px;
+    display: inline;
+}
+
+.header nav ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header__content{
+    width: 70%;
+    margin: 0 auto;
+    /* khai bao cha la flex thi con len 1 hang */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+
+    /* can the con theo chieu ngang */
+    -ms-flex-pack: distribute;
+        justify-content: space-around; 
+
+    /* can the con theo chieu doc */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/* carousel */
+.carousel {
+    background-image: url('../img/b3.jpg');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    /* canh giua the con chi ap dung cho the cha co duy nhat mot con */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+}
+
+
+.carousel__contents button{
+    background-color: #ff0e83;
+    border: solid 1px white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: UpDown 5s linear .5s infinite;
+}
+
+.carousel__contents button:hover{
+    background-color: white;
+    border: solid 1px #ff0e83;
+    color: black;
+}
+
+.carousel__contents p{
+    margin: 15px 0;
+}
+
+/* intro */
+.intro{
+    display: grid;
+    /* ba cach nay nhu nhau */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(4,25%);
+    /* grid-template-columns: repeat(4,1fr); */
+}
+
+.intro__ab1{
+    /* gom colums co 2 cach*/
+    /* grid-column: 2 / 4; */
+    grid-column: 2 / span 2;
+}
+
+.intro__best{
+    grid-column: 1 / span 2;
+    background-color: rgb(237,100,152);
+}
+
+.intro__ab4{
+    grid-column: 3 / span 2;
+}
+
+.intro__items img{
+    width: 100%;
+    display: block;
+}
+
+.intro__items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.intro__tradition{
+    background-color: rgb(78,42,132);
+}
+
+.intro__creat{
+    background-color: rgb(255,14,131);
+}
+
+.intro__tasty{
+    background-color: rgb(78,42,132);
+}
+
+.intro__quality{
+    background-color: rgb(131,110,170);
+}
+
+/* number */
+
+.number{
+    margin: 60px 0;
+}
+
+.number__content{
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+}
+
+.number__content h3{
+    color: rgb(78,42,132);
+    padding-bottom: 10px;
+}
+
+/* .number__items p:first-child{
+    color: rgb(78,42,132);
+}
+
+.number__items p:nth-child(2){
+    color: rgb(78,42,132);
+}
+
+.number__items p:last-child{
+    color: rgb(78,42,132);
+} */
+
+/* services */
+
+.services{
+    background-image: url(../img/s1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+}
+
+.services__container{
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+.services__contents{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+        
+}
+
+.services__items{
+    padding: 0 10px;
+}
+
+.services__items i{
+    font-size: 3.5rem;
+    color: #4e2a84;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #4e2a84;
+    border-radius: 50%;
+    line-height: 100px;
+    background-color: white;
+    /* transition-property: all;
+    transition-delay: 0s;
+    /* khoang thoi gian thay doi */
+    /* transition-duration: .5s;
+    transition-timing-function: linear; */ 
+    -webkit-transition: all .25s .5s linear; 
+    transition: all .25s .5s linear;
+}
+
+.services__items:hover i{
+    color:#ff0e83;
+}
+
+.services__items button{
+    color: white;
+    background-color: #ff0e83;
+    outline: none;
+    border: solid 2px white;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    transition: all .25s .3s linear;
+    }
+
+
+.services__items button:hover{
+    color: black;
+    background-color: white;
+    outline: none;
+    border: solid 2px #ff0e83;
+}
+
+.services__items h3{
+    margin-top: 20px;
+}
+
+.services__items p{
+    margin: 20px 0;
+}
+
+.services h1{
+    color: white;
+    padding-top: 70px;
+    font-size: 2rem;
+}
+/* gallery */
+
+
+
+.gallery h1{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 3rem;
+}
+
+.gallery__contens{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* chinh khoang cach cac khung con trong grid */
+    grid-gap: 20px;
+    padding: 0 10px;
+}
+
+.gallery__items1{
+    grid-column: 1 / span 2;
+}
+
+.gallery__items6{
+    grid-column: 3 / span 2;
+}
+
+.gallery__items img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.gallery__text{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 50px;
+}
+
+.gallery__text1{
+    position: absolute;
+    bottom: 45px;
+    right: 35px;
+}
+
+.gallery__text h3::after{
+    content: '';
+    width: 100%;
+    height: 3.5px;
+    background-color: white;
+    display: block;
+    margin-top: 15px;
+    transform: translateY(40px);
+    transition: all .5s;
+    opacity: 0;
+}
+
+.gallery__items h3{
+    transition: all .5s;
+}
+
+.gallery__items:hover h3{
+    transform: translateY(-25px);
+
+}
+
+.gallery__items:hover h3::after{
+    opacity: 1;
+    transform: translate(0);
+}
+
+.gallery__items p{
+    transition: all .5s;
+    opacity: 0;
+}
+
+.gallery__items:hover p{
+    opacity: 1;
+    transform: translateY(-25px);
+}
+
+.gallery__items{
+    position: relative;
+}
+
+/* team */
+.team{
+    background-color: rgb(78,42,132);
+    padding-bottom: 70px;
+    
+}
+
+.team h1{
+    padding: 50px 0;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.team__contens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 27px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+
+.team__contens img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.team__items{
+    position: relative;
+}
+
+.team__text{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    background-color: #ff0e83;
+    width: 100%;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.team__info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 40px;
+    padding-top: 110px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.team__info h4{
+    color: #ff0e83;
+    font-weight: normal;
+}
+
+.team__info p:nth-child(2){
+    margin: 12px 0;
+}
+
+.team__info p{
+    font-size: 0.9rem;
+}
+
+.team__items:hover .team__text{
+    opacity: 0;
+}
+
+.team__items:hover .team__info{
+    opacity: 1;
+}
+
+.team__items2 .team__info{
+    transform: translateX(-108%);
+    transition: all 1s;
+}
+
+.team__items2{
+    /* the con vuot qua cha se an phan ra khoi */
+    overflow: hidden;
+}
+
+.team__items2:hover .team__info{
+    transform: translateX(0);
+}
+
+.team__items3 .team__info{
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+
+.team__items3:hover .team__info{
+    transform: rotate(360deg);
+}
+
+.team__items4 .team__info{
+    transform: scale(0);
+    transition: all 1s;
+}
+
+.team__items4:hover .team__info{
+    transform: scale(1);
+}
+
+/* tes */
+
+.tes{
+    text-align: center;
+    background-image: url(../img/cc1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.tes h1{
+    color: white;
+    padding: 50px;
+    font-size: 3rem;
+}
+
+.tes__content .fa{
+    color: rgb(44,190,255);
+}
+
+.owl-carousel{
+    border: solid 5px rgb(255,14,131);
+    background-color: rgba(200,190,174,0.7);
+    width: 74%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.tes__p p{
+    color: white;
+}
+
+.item p:nth-child(2){
+    margin: 12px;
+    color: white;
+}
+
+/* contact */
+
+.contact{
+    padding: 40px 0;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2rem;
+}
+
+.contact h1{
+    text-align: center;
+    padding-bottom:60px;
+}
+
+.contact__form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 15px;
+    grid-column-gap: 25px;
+}
+
+.contact__txt{
+    grid-column: 1 / span 2;
+}
+
+.contact__button{
+    width: 100%;
+    grid-column: 1 / span 2;
+}
+
+.contact__form input{
+    padding: 15px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.contact__form textarea{
+    padding: 15px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.contact__form button{
+    background-color: #ff0e83;
+    padding: 15px;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.contact__form button:hover{
+    color: white;
+    background-color:black; 
+}
+
+.contact__txt::placeholder{
+    color: black;
+}
+
+.contact__form input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.contact__map{
+    width: 95%;
+    margin: 50px auto;
+}
+
+.google_map{
+    width: 100%;
+    height: 300px;
+}
+
+.contact__map{
+    width: 95%;
+    margin: 50px auto;
+}
+
+.videoYoutube{
+    width: 900px;
+    height: 506px;
+}
+
+
+
+/* Back to Top */
+.toTop{
+    position: fixed;
+    right:20px;
+    bottom: 50px;
+}
+.toTop i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid rgba(0,123,255,.5);
+    border-radius: 50%;
+    color: rgba(0,123,255,.5);
+    font-size: 3rem;
+    text-align: center;  
+}
+
+
+/*  back-to-top button visible */
+.toTop .toTopLink{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toTop .cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes UpDown{
+    /* 100s */
+    0%{
+
+    }
+    25%{
+        transform: translateY(-45px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(45px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

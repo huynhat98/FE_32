@@ -1,0 +1,41 @@
+h1,h2{
+    color: white;
+    background: red;
+}
+
+
+/* Desktop first */
+
+/* type: screen, print, speech, all */
+
+/* Size Lon truoc nho sau */
+
+@media screen and (max-width:1200px){
+    h1{
+        background: yellow;
+    }
+}
+
+@media screen and (max-width:992px){
+    h1{
+        background: blue;
+    }
+}
+
+/* Mobile first */
+/* Size nho truoc lon sau */
+
+@media screen and (min-width:576px){
+    h2{
+        background: pink;
+    }
+}
+
+@media screen and (min-width:768px){
+    h2{
+        background: purple;
+    }
+}
+
+
+
