@@ -1,0 +1,27 @@
+/* Global CSS */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+
+}
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+
+/* End Global CSS */
+
+/* header */
+
+.header-detail__content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-detail__content span, .header-detail__content i{
+    font-size: 0.875rem;
+}

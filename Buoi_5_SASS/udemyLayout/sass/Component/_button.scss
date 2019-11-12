@@ -1,0 +1,16 @@
+.ude-white{
+    @include styleButton($color-white-0 ,$color-gray-4, $pd-1 + 1, $pd-1 + 2);
+    @include styleText($color-gray-4,$fs-0, $fw-bold-0);
+    &:hover{
+        @include hoverButton($color-white-0,$color-black-0, $color-black-0)
+    }
+}
+
+.ude-red{
+    @include styleButton($color-red-0 ,$color-red-0, $pd-1 + 1, $pd-1 + 2);
+    @include styleText($color-white-0,$fs-0, $fw-bold-0);
+    &:hover{
+        @include hoverButton($color-red-2,$color-white-0,$color-red-2)
+    }
+}
+

@@ -1,0 +1,79 @@
+$color-text: white;
+$bg-color: red;
+
+
+h1{
+    color: $color-text;
+    background-color: $bg-color;
+}
+
+// .content1{
+//     h2{
+//         color: white;
+//         background-color: yellow;
+//     }
+//     button{
+//         // & dai dien cho the hoac class cha
+//         &:hover{
+//             background-color: red;
+//         }
+//     }
+// }
+
+// Extend
+// .content2{
+//      @extend .content1;
+// }
+
+
+
+// placeholder //code trong day khong duoc bien dich, chi bien dich trong noi minh goi.
+
+%styleContent{
+    h2{
+        color: white;
+        background-color: yellow;
+    }
+    button{
+        &:hover{
+            background-color: red;
+        }
+    }
+}
+
+.content1, .content2{
+    @extend %styleContent;
+}
+
+// Mixin // giong ham
+
+//Khong co tham so
+@mixin styleText{
+    h2{
+        color: white;
+        background-color: blue;
+    }
+}
+// .content3{
+//     @include styleText();
+// }
+
+// Co tham so truyen vao
+@mixin styleText2($color, $bg-color){
+    h2{
+        color: $color;
+        background-color: $bg-color;
+    }
+}
+
+.content3{
+    @include styleText2($color-text, $bg-color)
+}
+
+
+// function
+
+@function ex1($color){
+    $value: $color;
+    @return $value;
+}

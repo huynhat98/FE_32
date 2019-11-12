@@ -1,0 +1,15 @@
+.udemyCarousel{
+    background-image: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    color: white;
+    .searchForm{
+        @include searchStyle($color-white-0,$color-white-0,$color-white-0,$color-white-0);
+        .input-group{
+            border: none;
+        }
+    }
+}

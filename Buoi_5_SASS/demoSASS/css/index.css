@@ -1,0 +1,15 @@
+h1 {
+  color: white;
+  background-color: red; }
+
+.content1 h2, .content2 h2 {
+  color: white;
+  background-color: yellow; }
+.content1 button:hover, .content2 button:hover {
+  background-color: red; }
+
+.content3 h2 {
+  color: white;
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */

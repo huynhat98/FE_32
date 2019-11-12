@@ -1,0 +1,42 @@
+.udemyNavbar{
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+    .navbar-nav{
+        .nav-link{
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+        }
+    }
+    
+    .header__left{
+        display: flex;
+        align-items: center;
+        .navbar-brand{
+            flex-grow: 0.5;
+            img{
+                width: 110px;
+            }
+        }
+
+        .categories{
+            flex-grow: 0.5
+        }
+
+        .searchForm{
+            flex-grow: 6;
+            @include searchStyle($color-white-cream,$color-white-cream,$color-white-0,$color-gray-6);
+            .input-group{
+            border: none;
+            }
+        }
+    }
+
+    .header__right{
+        .navbar-nav{
+            @include mediaQuery('extra-large'){
+                .business,.teach{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

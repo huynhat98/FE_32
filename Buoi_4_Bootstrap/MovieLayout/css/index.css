@@ -1,0 +1,103 @@
+/* Global */
+
+html,body{
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+p{
+    margin: 0;
+}
+
+/* header */
+#movieNavbar .navbar-nav{
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+
+}
+
+#movieNavbar .navbar-nav .nav-item::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    /* #fbbd61,#ec7532 */
+    background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532) );
+    background: linear-gradient(to right, #fbbd61, #ec7532 ); 
+    /* dung after before thi phai display inline hoac inline-block */
+    display: block;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#movieNavbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+#movieNavbar .navbar-nav .nav-li .nav-link{
+    padding: 10px 25px;
+}
+
+#movieNavbar .navbar-nav .nav-li.active::after{
+    width: 100%;
+}
+#movieNavbar .navbar-nav .nav-li{
+    text-align: center;
+}
+
+/* Carousel */
+.movieCarousel .carousel .carousel-inner .carousel-caption{
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+} 
+
+.movieCarousel .carousel .carousel-indicators{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+}
+
+header{
+    position: absolute;
+    top:15px;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0 15px 0;
+}
+
+/* newIn */
+.newIn h2{
+    text-align: center;
+}
+
+/* showTimes  */
+.row .btn-secondary{
+    margin-left: 5px;
+}
+
+
+/* comingsoon */
+.comingsoon{
+    background-image: url(../img/slide-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px 0 40px 0;
+}
+.comingsoon .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+div-cha { display: grid;
+     grid-template-columns: 1fr 1fr } 
+div-con { grid-column: 1/3 }

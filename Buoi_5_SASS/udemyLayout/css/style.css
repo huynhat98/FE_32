@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.ude-white {
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 11px 12px;
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: 600; }
+  .ude-white:hover {
+    background-color: #fff;
+    color: #29303b;
+    border: 1px solid #29303b; }
+
+.ude-red {
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  padding: 11px 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600; }
+  .ude-red:hover {
+    background-color: #992337;
+    color: #fff;
+    border: 1px solid #992337; }
+
+.udemyNavbar {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal; }
+  .udemyNavbar .navbar-nav .nav-link {
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal; }
+  .udemyNavbar .header__left {
+    display: flex;
+    align-items: center; }
+    .udemyNavbar .header__left .navbar-brand {
+      flex-grow: 0.5; }
+      .udemyNavbar .header__left .navbar-brand img {
+        width: 110px; }
+    .udemyNavbar .header__left .categories {
+      flex-grow: 0.5; }
+    .udemyNavbar .header__left .searchForm {
+      flex-grow: 6; }
+      .udemyNavbar .header__left .searchForm .input-group {
+        background-color: #f2f3f5;
+        border: 1px solid #f2f3f5; }
+        .udemyNavbar .header__left .searchForm .input-group .form-control {
+          background-color: transparent;
+          border: 1px solid transparent;
+          transition: none; }
+          .udemyNavbar .header__left .searchForm .input-group .form-control:focus {
+            box-shadow: none;
+            background-color: #fff;
+            border-top: 1px solid #dedfe0;
+            border-bottom: 1px solid #dedfe0;
+            border-left: 1px solid #dedfe0;
+            border-radius: 0; }
+            .udemyNavbar .header__left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+              border-radius: 0;
+              background-color: #fff;
+              border-top: 1px solid #dedfe0;
+              border-bottom: 1px solid #dedfe0;
+              border-right: 1px solid #dedfe0; }
+              .udemyNavbar .header__left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+                background-color: #ec5252;
+                color: #fff;
+                border: 1px solid #ec5252; }
+        .udemyNavbar .header__left .searchForm .input-group .input-group-text {
+          background-color: transparent;
+          border: 1px solid transparent;
+          color: #ec5252; }
+          .udemyNavbar .header__left .searchForm .input-group .input-group-text:hover {
+            border-radius: 0;
+            background-color: #ec5252;
+            color: #fff;
+            border: 1px solid #ec5252; }
+      .udemyNavbar .header__left .searchForm .input-group {
+        border: none; }
+  @media screen and (max-width: 1200px) {
+    .udemyNavbar .header__right .navbar-nav .business, .udemyNavbar .header__right .navbar-nav .teach {
+      display: none; } }
+
+.udemyCarousel {
+  background-image: url(../img/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  color: white; }
+  .udemyCarousel .searchForm .input-group {
+    background-color: #fff;
+    border: 1px solid #fff; }
+    .udemyCarousel .searchForm .input-group .form-control {
+      background-color: transparent;
+      border: 1px solid transparent;
+      transition: none; }
+      .udemyCarousel .searchForm .input-group .form-control:focus {
+        box-shadow: none;
+        background-color: #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-radius: 0; }
+        .udemyCarousel .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+          border-radius: 0;
+          background-color: #fff;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          border-right: 1px solid #fff; }
+          .udemyCarousel .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+            background-color: #ec5252;
+            color: #fff;
+            border: 1px solid #ec5252; }
+    .udemyCarousel .searchForm .input-group .input-group-text {
+      background-color: transparent;
+      border: 1px solid transparent;
+      color: #ec5252; }
+      .udemyCarousel .searchForm .input-group .input-group-text:hover {
+        border-radius: 0;
+        background-color: #ec5252;
+        color: #fff;
+        border: 1px solid #ec5252; }
+  .udemyCarousel .searchForm .input-group {
+    border: none; }
+
+/*# sourceMappingURL=style.css.map */
